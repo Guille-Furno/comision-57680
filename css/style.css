@@ -90,7 +90,7 @@ ul li a:hover {
 .bienvenida {
     height: 400px;
     background-color: #1E2D3B;
-    border-radius: 0 0 150px 0;
+    border-radius: 0 0 100px 0;
     box-shadow: 5px 5px 10px rgb(143 141 141);
 }
 
@@ -525,6 +525,10 @@ justify-content: space-evenly;
         font-size: 1.0625rem;
     }
 
+    .bienvenida{
+        border-radius: 0 0 80px 0;
+    }
+
     .bienvenida h1 {
         height: 50%;
         margin-bottom: 0.5rem;
@@ -574,6 +578,7 @@ justify-content: space-evenly;
 
     .bienvenida{
         height: 300px;
+        border-radius: 0 0 80px 0;
     }
 
     .bienvenida h1 {
@@ -643,9 +648,9 @@ justify-content: space-evenly;
 
 }
 
-/**MOBILE GRANDE 425px**/
+/**MOBILE GRANDE 430px**/
 
-@media (max-width: 425px){
+@media (max-width: 430px){
 
     .header {
         height: 10rem;
@@ -663,7 +668,7 @@ justify-content: space-evenly;
 
     .bienvenida {
         height: 200px;
-        border-radius: 0 0 100px 0;
+        border-radius: 0 0 50px 0;
     }
     
     .bienvenida h1 {
@@ -687,7 +692,7 @@ justify-content: space-evenly;
     }
     
     .nuestrosServicios h2 {
-        font-size: 1.875rem;
+        font-size: 1.5rem;
         margin-left: -1.25rem;
     }
 
@@ -711,7 +716,7 @@ justify-content: space-evenly;
     }
     
     .confian h2 {
-        font-size: 30px;
+        font-size: 1.5rem;
     }
 
     .lineaRoja3 {
@@ -721,7 +726,7 @@ justify-content: space-evenly;
 
     .empresas {
         flex-direction: column;
-        gap: 2.5rem;
+        gap: 3.5rem;
         align-items: center;
         margin: 0;
         padding: 2.5rem;
@@ -736,6 +741,11 @@ justify-content: space-evenly;
         position: relative; 
         height: 55rem;
     }
+
+    .logoFooter {
+        width: 22rem;
+    }
+
 
     .datos {
         display: flex;
@@ -776,7 +786,97 @@ justify-content: space-evenly;
 
 @media (max-width: 320px){
 
+    .bienvenida {
+        height: 180px;
+        border-radius: 0 0 50px 0;
+    }
+
+    .bienvenida h1{
+        font-size: 1.3rem;
+    }
+
+    .lineaRoja {
+        width: 3.5rem;
+    }
+
+    .bienvenida h3 {
+        font-size: 12px;
+    }
+
+    .lineaRoja2 {
+        border: 2px solid;
+        width: 1.5rem;
+    }
+
+    .nuestrosServicios h2 {
+        font-size: 1.3rem;
+    }
+
+    .grid-tarjetas{
+        grid-template-columns: repeat(1, 16rem);
+        row-gap: 1rem;
+    }
+
+    .tarjetasContainer { 
+        width: 16rem;
+        height: 25rem;
+    }
+
+    .tarjetasContainer h3 {
+        font-size: 1rem;
+    }
+
+    .tarjetasContainer button {
+        height: 2rem;
+        width: 8rem;
+    }
+
+    .tarjetasContainer a {
+        font-size: 12px;
+    }
+
+    .confian h2 {
+        font-size: 1.3rem;
+    }
+
+    .lineaRoja3 {
+        border: 2px solid;
+        width: 4rem;
+    }
+
+    .logoFooter {
+        width: 20rem;
+    }
+    .contacto{
+        width: 15rem;
+        
+    }
+
+    .contacto img {
+        height: 1rem;
+        width: 1rem;
+    }
+
+    .footer p {
+        font-size: 15px;
+    }
+
+    .input {
+        width: 16rem;
+    }
+
+    .textArea {
+        width: 16rem;
+    }
     
+    .footer button {
+        width: 5.25rem;
+        height: 2rem;
+    }
+    
+    .position-button{
+        right: 3.375rem;
+    }
 }
 
 
