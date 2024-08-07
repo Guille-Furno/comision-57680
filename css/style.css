@@ -81,7 +81,6 @@ ul li a {
 
 ul li a:hover {
     font-weight: bold;
-
     transition: 0.2s;
 }
 
@@ -320,7 +319,7 @@ ul li a:hover {
 }
 
 
-/*** PAGINAS SECUNDARIAS ***/
+/****** PAGINAS SECUNDARIAS ******/
 
 .body2{
     background-color: white;
@@ -386,6 +385,15 @@ ul li a:hover {
 }
 
 .info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.info2 {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -510,9 +518,192 @@ justify-content: space-evenly;
 }
 
 
-/****MOBILE****/
+/*******@MEDIA*******/
+
+/**PANTALLA 4K**/
+/*INDEX*/
+
+@media (min-width: 1441px) and (max-width: 2561px){
+    
+    .header {
+        height: 35rem;
+    }
+
+    .imageLogo {
+    height: 11.5rem;
+    margin-left: 4rem;
+    margin-top: 4rem;
+    }
+
+    ul li a {
+        font-size: 1.5625rem;
+    }
+
+    ul li a:hover {
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    .bienvenida{
+        height: 600px;
+    }
+
+    .bienvenida h1{
+        font-size: 4.5rem;
+    }
+
+    .lineaRoja {
+        border: 4px solid;
+        width: 16rem;
+    }
+    .bienvenida h3{
+    font-size: 3.25rem;
+    }
+
+    .tituloSubrayado2{
+        padding: 50px;
+    }
+
+    .tituloSubrayado2 h2{
+        font-size: 65px;
+    }
+
+    .lineaRoja2 {
+        border: 0.3rem solid;
+        width: 4.5rem;
+    }
+
+    .grid-tarjetas {
+        grid-template-columns: repeat(3, 25rem);
+        grid-template-rows: 35rem 35rem;
+        column-gap: 8rem;
+        row-gap: 10rem;
+    }
+
+    .tarjetasContainer {
+        width: 25rem;
+        height: 35rem;
+    }
+
+    .tarjetasContainer h3{
+        font-size: 30px;
+    }
+
+    .tarjetasContainer button {
+        height: 2.5rem;
+        width: 10rem;
+    }
+
+    .tarjetasContainer a {
+        font-size: 1rem;
+    }
+
+    .confian {
+        height: 45rem;
+    }
+
+    .empresas {
+        height: 20%;
+        margin-top: 6.125rem;
+    }
+
+    .footer {
+        height: 40rem;
+    }
+
+    .datos{
+        margin-left: 8rem;
+    }
+
+    .logoFooter {
+        width: 33rem;
+    }
+
+    .contacto img {
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+
+    .footer p {
+        font-size: 1.6rem;
+    }
+
+    .formulario {
+        margin-left: 20rem;
+    }
+
+    .input {
+        width: 35rem;
+        height: 4.125rem;
+    }
+
+    .textArea{
+        width: 35rem;
+        height: 19rem;
+    }
+
+    .footer button {
+        width: 8em;
+        height: 3rem;
+        font-size: 18px;
+    }
+    
+    .position-button {
+        position: absolute;
+        right: 1.9375rem;
+        bottom: -7.625rem;
+    }
+
+    /*PAGINAS SECUNDARIAS*/
+
+    .header2 {
+        height: 20rem;
+    }
+
+    .header2 nav {
+        width: 40rem;
+        margin-top: 7.25rem;
+    }
+
+
+    .servicios .tituloSubrayado2 h2 {
+        font-size: 70px;
+    }
+
+    .servicios img {
+        width: 40rem;
+    }
+
+    .servicios ul {
+        height: 550px;
+        width: 40rem;
+    }
+
+    .servicios p {
+        font-size: 2.5rem;
+    }
+    .footer2 {
+        height: 18rem;
+    }
+
+    .contacto2 {
+    width: 35rem;
+    }
+
+    .footer2 p {
+        font-size: 1.8rem;
+    }
+
+    .contacto2 img {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+}
+
+
 
 /**LAPTOP 1024px**/
+/*INDEX*/
 
 @media (max-width: 1024px){
 
@@ -553,6 +744,20 @@ justify-content: space-evenly;
         margin-left: 4.75rem;
     }
 
+/*PAGINAS SECUNDARIAS*/
+
+    .servicios img {
+    width: 25rem;
+    }
+
+    .servicios ul {
+
+        width: 25rem;
+    }
+
+    .servicios p {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -646,6 +851,34 @@ justify-content: space-evenly;
         width: 20rem;
     }
 
+    /*PAGINAS SECUNDARIAS*/
+
+    .servicios img {
+        width: 20rem;
+        }
+    
+        .servicios ul {
+    
+            width: 15rem;
+        }
+    
+        .servicios p {
+            font-size: 1.3rem;
+        }
+
+        .contacto2 {
+            width: 20rem;
+        }
+        
+        .footer2 p {
+            font-size: 0.8rem;
+        }
+    
+        .contacto2 img {
+            height: 0.8rem;
+            width: 0.8rem;
+        }
+
 }
 
 /**MOBILE GRANDE 430px**/
@@ -692,7 +925,7 @@ justify-content: space-evenly;
     }
     
     .nuestrosServicios h2 {
-        font-size: 1.5rem;
+        font-size: 1.65rem;
         margin-left: -1.25rem;
     }
 
@@ -716,7 +949,7 @@ justify-content: space-evenly;
     }
     
     .confian h2 {
-        font-size: 1.5rem;
+        font-size: 1.65rem;
     }
 
     .lineaRoja3 {
@@ -733,7 +966,7 @@ justify-content: space-evenly;
     }
 
     .logoEmpresas{
-        width: 60%;
+        width: 50%;
     }
 
     .footer {
@@ -765,6 +998,45 @@ justify-content: space-evenly;
         bottom: 0.625rem;
     }
 
+    /*PAGINAS SECUNDARIAS*/
+
+    .servicios .tituloSubrayado2 h2{
+        font-size: 2.25rem;
+    }
+
+    .info{
+        flex-direction: column;
+        ;
+    }
+
+    .info2{
+        display: flex;
+        flex-flow: row wrap-reverse
+    }
+
+    .info img{
+    }
+
+    .servicios ul {
+        height: 100%;
+    }
+
+    .footer2{
+        flex-direction: column;
+        height: 15rem;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .footer2 p {
+        font-size: 1rem;
+    }
+
+    .contacto2 img {
+        height: 1em;
+        width: 1rem;
+    }
+
 }
 
 /**MOBILE CHICO 375px**/
@@ -779,6 +1051,27 @@ justify-content: space-evenly;
     .confian h2 {
         font-size: 1.6rem;
     }
+
+/*PAGINAS SECUNDARIAS*/
+
+    .servicios .tituloSubrayado2 h2{
+        font-size: 2rem;
+    }
+
+
+    .info img{
+        width: 15rem;
+    }
+
+    
+    .info2 img{
+        width: 15rem;
+    }
+
+    .servicios ul {
+        height: 100%;
+    }
+
 }
 
 
@@ -876,6 +1169,27 @@ justify-content: space-evenly;
     
     .position-button{
         right: 3.375rem;
+    }
+
+    /*PAGINAS SECUNDARIAS*/
+
+    .servicios .tituloSubrayado2 h2{
+        font-size: 1.5rem;
+    }
+
+
+    .info img{
+        width: 15rem;
+    }
+
+    
+    .info2 img{
+        width: 15rem;
+    }
+
+    .servicios ul {
+        width: 12rem;
+        height: 100%;
     }
 }
 
