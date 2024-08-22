@@ -1,1801 +1,571 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 p {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    letter-spacing: 0px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0px;
 }
 
 h1 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold !important;
-    letter-spacing: -1px;
-    margin: 0;
-    font-size: 3.375rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold !important;
+  letter-spacing: -1px;
+  margin: 0;
+  font-size: 3.375rem;
 }
 
 h2 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 500;
-    font-size: 3.25rem;
-    letter-spacing: 0px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  font-size: 3.25rem;
+  letter-spacing: 0px;
 }
 
 h3 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    font-size: 2.25rem;
-    letter-spacing: 0px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 2.25rem;
+  letter-spacing: 0px;
 }
 
-body{
-    background-color: #f1f2f1;
-    margin: 0;
+header {
+  height: 24rem;
+  background-image: url(../assets/img/carousel-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: none;
 }
-
-
-/* HEADER INDEX */
-
-
-.header{
-    height: 24rem;
-    background-image: url(../assets/img/carousel-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+header img {
+  height: 7.5rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
-
-.imageLogo {
-    display: flex;
-    height: 7.5rem;
-    margin-left: 2rem;
-    margin-top: 2rem;
+header nav {
+  width: 36%;
+  margin-right: 3rem;
+  margin-top: 2.25rem;
 }
-
-.nav {
-    width: 36%;
-    margin-right: 3rem;
-    margin-top: 2.25rem;
+header nav ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
-header ul {
-    list-style: none;
-    display: flex;
-    width: 100%;
-    padding: 0;
-    justify-content: space-evenly;
-    align-items: center;
+header nav a {
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.25rem;
 }
-
-ul li a {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    font-size: 1.25rem;
+header nav a:hover {
+  font-weight: bold;
+  transition: 0.2s;
 }
-
-ul li a:hover {
-    font-weight: bold;
-    transition: 0.2s;
-}
-
-/* BIENVENIDA INDEX */
 
 .bienvenida {
-    height: 400px;
-    background-color: #1E2D3B;
-    border-radius: 0 0 100px 0;
-    box-shadow: 5px 5px 10px rgb(143 141 141);
+  height: 400px;
+  background-color: #1E2D3B;
+  border-radius: 0 0 100px 0;
+  box-shadow: 5px 5px 10px rgb(143, 141, 141);
 }
-
-.tituloSubrayado {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    height: 50%;
-    text-shadow: 5px 5px 10px rgb(0 0 0);
+.bienvenida div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  height: 50%;
+  text-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
-
-.bienvenida h1{
-    color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    height: 100%;
-    margin-bottom: -3.5rem;
+.bienvenida div h1 {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  height: 100%;
+  margin-bottom: -3.5rem;
 }
-
-.lineaRoja{
-    border: 2px solid;
-    border-radius: 15px;
-    color: #E21F41;
-    width: 13rem;
-    box-shadow: 5px 5px 10px rgb(0 0 0);
+.bienvenida div span {
+  border: 2px solid;
+  border-radius: 15px;
+  color: #E21F41;
+  width: 13rem;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
-
-.bienvenida h3{
-    color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    font-variant: small-caps;
-    text-align: center;
-    padding-top: .625rem;
+.bienvenida h3 {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  font-variant: small-caps;
+  text-align: center;
+  padding-top: 0.625rem;
 }
-
-/* SERVICIOS INDEX */
-
 
 .tituloSubrayado2 {
-    display: flex;
-    height: 12.5rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    padding-top: 1rem;
+  height: 12.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  padding-top: 1rem;
+}
+.tituloSubrayado2 h2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  color: black;
+  font-weight: bold;
+  text-shadow: 7px 7px 10px rgb(143, 141, 141);
+}
+.tituloSubrayado2 h2:hover {
+  transition: 0.2s;
+  text-shadow: 7px 7px 10px rgb(91, 91, 91);
+}
+.tituloSubrayado2 h2 span {
+  border: 0.25rem solid;
+  border-radius: 0.625rem;
+  color: #E21F41;
+  width: 4rem;
+  transform: rotate(90deg);
 }
 
-.nuestrosServicios h2{
-    color: black;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    font-weight: bold;
-    text-shadow: 7px 7px 10px rgb(143 141 141);
+.slide-in-blurred-top {
+  -webkit-animation: slide-in-blurred-top 2s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: slide-in-blurred-top 2s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
-.nuestrosServicios h2:hover{
-
-    transition: 0.2s;
-    text-shadow: 7px 7px 10px rgb(91, 91, 91);
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
 }
-
-.lineaRoja2{
-    border: .25rem solid;
-    border-radius: .625rem;
-    color: #E21F41;
-    width: 4rem;
-    transform: rotate(90deg);
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
 }
-
-.grid-tarjetas{
-    display: grid;
-    justify-items: stretch;
-    align-items: stretch;
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: repeat(3, 20.5rem);
-    grid-template-rows: 27.5rem 27.5rem;
-    column-gap: 3rem;
-    row-gap: 4.0625rem;
-    padding: 1.875rem 0 6.625rem 0;
+.grid-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 20.5rem);
+  column-gap: 3rem;
+  row-gap: 4.0625rem;
+  justify-content: center;
+  padding: 1.875rem 0 6.625rem 0;
 }
-
-.tarjetasContainer { 
-    background-color: white;
-    width: 20.5rem;
-    height: 27.5rem;
-    display: flex;
-    flex-direction: column;
-    border-radius: 1.25rem;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    box-shadow: 5px 5px 10px rgb(143 141 141);
-}
-
-.tarjetasContainer:hover {
-    box-shadow: 10px 10px 10px rgb(106, 105, 105);
-    transition: 0,2s;
-}
-
-
-.tarjetasContainer h3{
-    margin: 0 10%;
-    font-size: 1.125rem;
-    font-weight: 600;
-}
-.tarjetasContainer img {
-    width: 80%;
-    height: 70%;
-    margin: 0 10%;
-}
-
-.tarjetasContainer button{
-    margin-left: 10%;
-    height: 2.5rem;
-    width: 10.25rem;
-    border-radius: 10px;
-    background-color: #1E2D3B;
-    border: none;
-    box-shadow: 5px 5px 7px rgb(143 141 141);
-}
-
-.tarjetasContainer a {
-    color: white;
-    font-size: .9375rem;
-    border: none;
-    text-decoration: none;
-}
-
-.tarjetasContainer a:hover {
-    font-weight: bold;
-    transition: 0.5s;
-}
-
-/* CONFIAN INDEX*/
-
 
 .confian {
-    height: 35rem;
-    background-color: white;
-    box-shadow: 5px 5px 10px rgb(143 141 141);
+  height: 35rem;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgb(143, 141, 141);
+}
+.confian .tituloSubrayado2 {
+  height: 40%;
+}
+.confian .tituloSubrayado2 h2 {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 5px 5px 10px rgb(143, 141, 141);
+}
+.confian .tituloSubrayado2 span {
+  border: 0.25rem solid;
+  border-radius: 625rem;
+  color: #E21F41;
+  width: 11rem;
 }
 
-.confian .tituloSubrayado{
-    height: 40%;
+.empresas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: space-evenly;
+  align-items: none;
+  gap: none;
+  height: 15%;
+  margin-top: 8.125rem;
 }
 
-.lineaRoja3{
-    border: .25rem solid;
-    border-radius: 625rem;
-    color: #E21F41;
-    width: 11rem;
+.footer {
+  height: 31.25rem;
+  background-color: #1E2D3B;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: none;
+  gap: none;
+}
+.footer .datos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: none;
+  gap: none;
+  margin-left: 1.875rem;
+  margin-bottom: 4rem;
+}
+.footer .datos .logoFooter {
+  width: 25rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.footer .datos .contacto {
+  width: 23.5rem;
+  margin-left: 1.875rem;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: flex-start;
+  align-items: center;
+  gap: none;
+}
+.footer .datos .contacto a {
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  text-decoration: none;
+}
+.footer .datos .contacto img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+.footer .datos .contacto p {
+  color: white;
+  font-size: 1.125rem;
+  margin-left: 2.4375rem;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
-.confian h2{
-    color: black;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-shadow: 5px 5px 10px rgb(143 141 141);
+.formulario {
+  height: 20rem;
+  margin-top: 6rem;
+  position: relative;
+  margin-right: 3.125rem;
 }
-
-.empresas{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 15%;
-    margin-top: 8.125rem;
+.formulario div {
+  margin-bottom: 1.25rem;
 }
-
-/* FOOTER IDEX */
-
-.footer{
-    height: 31.25rem;
-    background-color: #1E2D3B;
-    display: flex;
-    justify-content: space-between;
+.formulario div input {
+  width: 25rem;
+  height: 3.125rem;
+  padding: 0;
+  border: none;
+  border-radius: 0.625rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
 }
-
-.datos {
-    display: flex;
-    flex-direction: column;
-    margin-left: 1.875rem;
+.formulario div .textArea {
+  width: 25rem;
+  height: 12.5rem;
+  padding: 0;
+  border: none;
+  border-radius: 0.75rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
 }
-
-.logoFooter{
-    width: 25rem;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+.formulario div .label {
+  display: flex;
+  flex-direction: column;
 }
-
-.footer p {
-    color: white;
-    font-size: 1.125rem;
-    margin-left: 2.4375rem;
-    margin-top: 18px;
-    margin-bottom: 18px;
-    
+.formulario button {
+  width: 6.25rem;
+  height: 2.125rem;
+  padding: 0;
+  border: none;
+  border-radius: 0.625rem;
+  background-color: #D9D9D9;
+  box-shadow: 2px 2px 5px rgb(143, 141, 141);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  position: absolute;
+  right: 0.9375rem;
+  bottom: -0.625rem;
 }
-.contacto{
-    width: 23.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 1.875rem;
-}
-
-.contacto img {
-    height: 1.25rem;
-    width: 1.25rem;
-}
-
-.contacto a{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.formulario{
-    height: 20rem;  
-    margin-top: 6rem;
-    position: relative;
-    margin-right: 3.125rem;
-}
-
-.formulario div{
-    margin-bottom: 1.25rem;
-}
-
-.input{
-    width: 25rem;
-    height: 3.125rem;
-    padding: 0;
-    border: none;
-    border-radius: .625rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
-}
-
-.textArea {
-    width: 25rem;
-    height: 12.5rem;
-    padding: 0;
-    border: none;
-    border-radius: .75rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
-}
-
-.footer button {
-    width: 6.25rem;
-    height: 2.125rem;
-    padding: 0;
-    border: none;
-    border-radius: .625rem;
-    background-color: #D9D9D9;
-    box-shadow: 2px 2px 5px rgb(143 141 141);
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 14px;
-}
-
-.position-button{
-    position: absolute;
-    right: .9375rem;
-    bottom: -0.625rem;
-}
-
-.footer button:hover {
-    background-color: #b7b6b6;
-    transition: 0.2s;
-}
-
-.label {
-    display: flex;
-    flex-direction: column;
-}
-
-
-/****** PAGINAS SECUNDARIAS ******/
-
-.body2{
-    background-color: white;
-}
-
-/* HEADER PAGINAS*/
-
-.imageLogo a img {
-    display: flex;
-    height: 100%;
-    margin-left: 1rem;
+.formulario button:hover {
+  background-color: #b7b6b6;
+  transition: 0.2s;
 }
 
 .header2 {
-    height: 12rem;
-    background-color: #1E2D3B;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+  height: 12rem;
+  width: 100%;
+  background-image: none;
+  background-color: #1E2D3B;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: none;
 }
-
-.header2 nav{
-    margin-top: 4.25rem;
-    width: 30rem;
+.header2 nav {
+  margin-top: 4.25rem;
+  width: 30rem;
 }
-
 .header2 nav ul {
-    list-style: none;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-block: 0;
-    padding: 0;
-    text-shadow: 6px 6px 5px #0e171f;
+  list-style: none;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: none;
+  display: flex;
+  margin-block: 0;
+  padding: 0;
+  text-shadow: 6px 6px 5px #0e171f;
 }
 
-/*SERVICIOS PAGINAS*/
-
-
+/****** PAGINAS SECUNDARIAS ******/
 .servicios {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  height: 100%;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
 }
-
-.servicios .tituloSubrayado2 {
-    margin-bottom: 1rem;
+.servicios h2 {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  font-weight: bold;
+  text-shadow: 5px 5px 10px rgb(143, 141, 141);
+  margin-bottom: 1rem;
 }
-.servicios h2{
-    color: black;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    font-weight: bold;
-    text-shadow: 5px 5px 10px rgb(143 141 141);
+.servicios h2 span {
+  border: 0.25rem solid;
+  border-radius: 0.625rem;
+  color: #E21F41;
+  width: 4rem;
+  transform: rotate(90deg);
 }
-
-.info {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 2rem 0;
+.servicios .info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: none;
+  margin: 2rem 0;
 }
-
-.info2 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 2rem 0;
+.servicios .info img {
+  width: 30rem;
 }
-
-.servicios img {
-    width: 30rem;
-
+.servicios .info ul {
+  height: 411px;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: none;
+  gap: none;
+  margin: 0;
+  padding: 0;
 }
-
-.redes-img{
-    height: 28.125rem;
+.servicios .info ul p {
+  font-size: 1.5625rem;
 }
-
-.servicios ul {
-    height: 411px;
-    width: 30rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    margin: 0;
-    padding: 0;
+.servicios .info .redes-img {
+  height: 28.125rem;
 }
-
-.servicios li {
-    font-size: 1.5625rem
-    
-}
-.servicios p {
-    font-size: 1.5625rem
-}
-
-/*FOOTER PAGINAS*/
 
 .footer2 {
-height: 8.25rem;
-background-color: #1E2D3B;
-display: flex;
-justify-content: space-evenly;
+  height: 8.25rem;
+  background-color: #1E2D3B;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: space-evenly;
+  align-items: none;
+  gap: none;
+}
+.footer2 .contacto2 {
+  width: 23.5rem;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+}
+.footer2 .contacto2 a {
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  text-decoration: none;
+}
+.footer2 .contacto2 img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+.footer2 .contacto2 p {
+  color: white;
+  font-size: 1.125rem;
+  margin-left: 0.625rem;
 }
 
-.footer2 p {
-    color: white;
-    font-size: 1.125rem;
-    margin-left: .625rem;
+.tarjetasContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: none;
+  width: 20.5rem;
+  height: 27.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 5px 5px 10px rgb(143, 141, 141);
 }
-
-.contacto2 {
-    width: 23.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.tarjetasContainer:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(10px 10px 10px rgb(106, 105, 105));
+  transition: 0, 2s;
 }
-
-.contacto2 img {
-    height: 1.25rem;
-    width: 1.25rem;
+.tarjetasContainer h3 {
+  margin: 0 10%;
+  font-size: 1.125rem;
+  font-weight: 600;
 }
-
-.contacto2 a{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+.tarjetasContainer img {
+  width: 80%;
+  height: 70%;
+  margin: 0 10%;
 }
-
-
-
+.tarjetasContainer button {
+  margin-left: 10%;
+  height: 2.5rem;
+  width: 10.25rem;
+  border-radius: 10px;
+  background-color: #1E2D3B;
+  border: none;
+  box-shadow: 5px 5px 7px rgb(143, 141, 141);
+}
+.tarjetasContainer a {
+  color: white;
+  font-size: 0.9375rem;
+  border: none;
+  text-decoration: none;
+}
+.tarjetasContainer:hover {
+  font-weight: bold;
+  transition: 0.5s;
+}
 
 /*******@MEDIA*******/
-
 /**PANTALLA 4K**/
 /*INDEX*/
-
-@media (min-width: 1441px) and (max-width: 2561px){
-    
-    .header {
-        height: 35rem;
-    }
-
-    .imageLogo {
+@media (min-width: 1441px) and (max-width: 2561px) {
+  header {
+    height: 35rem;
+  }
+  header img {
     height: 11.5rem;
     margin-left: 4rem;
     margin-top: 4rem;
-    }
-
-    ul li a {
-        font-size: 1.5625rem;
-    }
-
-    ul li a:hover {
-        font-weight: bold;
-        transition: 0.2s;
-    }
-
-    .bienvenida{
-        height: 600px;
-    }
-
-    .bienvenida h1{
-        font-size: 4.5rem;
-    }
-
-    .lineaRoja {
-        border: 4px solid;
-        width: 16rem;
-    }
-    .bienvenida h3{
-    font-size: 3.25rem;
-    }
-
-    .tituloSubrayado2{
-        padding: 50px;
-    }
-
-    .tituloSubrayado2 h2{
-        font-size: 65px;
-    }
-
-    .lineaRoja2 {
-        border: 0.3rem solid;
-        width: 4.5rem;
-    }
-
-    .grid-tarjetas {
-        grid-template-columns: repeat(3, 25rem);
-        grid-template-rows: 35rem 35rem;
-        column-gap: 8rem;
-        row-gap: 10rem;
-    }
-
-    .tarjetasContainer {
-        width: 25rem;
-        height: 35rem;
-    }
-
-    .tarjetasContainer h3{
-        font-size: 30px;
-    }
-
-    .tarjetasContainer button {
-        height: 2.5rem;
-        width: 10rem;
-    }
-
-    .tarjetasContainer a {
-        font-size: 1rem;
-    }
-
-    .confian {
-        height: 45rem;
-    }
-
-    .empresas {
-        height: 20%;
-        margin-top: 6.125rem;
-    }
-
-    .footer {
-        height: 40rem;
-    }
-
-    .datos{
-        margin-left: 8rem;
-    }
-
-    .logoFooter {
-        width: 33rem;
-    }
-
-    .contacto img {
-        height: 1.6rem;
-        width: 1.6rem;
-    }
-
-    .footer p {
-        font-size: 1.6rem;
-    }
-
-    .formulario {
-        margin-left: 20rem;
-    }
-
-    .input {
-        width: 35rem;
-        height: 4.125rem;
-    }
-
-    .textArea{
-        width: 35rem;
-        height: 19rem;
-    }
-
-    .footer button {
-        width: 8em;
-        height: 3rem;
-        font-size: 18px;
-    }
-    
-    .position-button {
-        position: absolute;
-        right: 1.9375rem;
-        bottom: -7.625rem;
-    }
-
-    /*PAGINAS SECUNDARIAS*/
-
-    .header2 {
-        height: 20rem;
-    }
-
-    .header2 nav {
-        width: 40rem;
-        margin-top: 7.25rem;
-    }
-
-
-    .servicios .tituloSubrayado2 h2 {
-        font-size: 70px;
-    }
-
-    .servicios img {
-        width: 40rem;
-    }
-
-    .servicios ul {
-        height: 550px;
-        width: 40rem;
-    }
-
-    .servicios p {
-        font-size: 2.5rem;
-    }
-    .footer2 {
-        height: 18rem;
-    }
-
-    .contacto2 {
-    width: 35rem;
-    }
-
-    .footer2 p {
-        font-size: 1.8rem;
-    }
-
-    .contacto2 img {
-        height: 1.8rem;
-        width: 1.8rem;
-    }
+  }
+  .nav a {
+    font-size: 1.5625rem;
+  }
+  .nav a:hover {
+    font-weight: bold;
+    transition: 0.2s;
+  }
+}
+.bienvenida {
+  height: 600px;
+}
+.bienvenida h1 {
+  font-size: 4.5rem;
+}
+.bienvenida h1 span {
+  border: 4px solid;
+  width: 16rem;
+}
+.bienvenida h3 {
+  font-size: 3.25rem;
 }
 
-/**LAPTOP 1144px**/
-/*INDEX*/
-
-@media (max-width: 1144px)and (min-width: 1171px){
-    .formulario {
-        margin-left: 6.75rem;
-    }
+.tituloSubrayado2 {
+  padding: 50px;
+}
+.tituloSubrayado2 h2 {
+  font-size: 65px;
 }
 
-/**LAPTOP 1024px**/
-/*INDEX*/
-
-@media (max-width: 1170px){
-
-    .nav {
-        width: 40%;
-        margin-right: 1rem;
-    }
-
-    .ul li a {
-        font-size: 1.0625rem;
-    }
-
-    .bienvenida{
-        border-radius: 0 0 80px 0;
-    }
-
-    .bienvenida h1 {
-        height: 50%;
-        margin-bottom: 0.5rem;
-    }
-
-
-    .bienvenida h3 {
-        margin: 0;
-        font-size: 30px;
-    }
-
-    .grid-tarjetas{
-        grid-template-columns: repeat(3, 18rem);
-        column-gap: 2rem;
-    }
-
-    .tarjetasContainer { 
-        width: 18rem;
-    }
-
-    .formulario{
-        margin-left: 4.75rem;
-    }
-
-/*PAGINAS SECUNDARIAS*/
-
-    .servicios img {
-    width: 25rem;
-    }
-
-    .servicios ul {
-
-        width: 25rem;
-    }
-
-    .servicios p {
-        font-size: 1.5rem;
-    }
-}
-
-
-/*INDEX*/
-
-@media (max-width: 1170px)and (min-width: 940px){
-    .logoFooter {
-        width: 20rem;
-    }
-
-    .nav {
-        margin-right: 3rem;
-    }
-    ul li a {
-        font-size: 1rem;
-    }
-
-    .grid-tarjetas {
-        grid-template-columns: repeat(3, 15rem);
-        grid-template-rows: 25rem 25rem;
-    }
-
-    .tarjetasContainer {
-        width: 15rem;
-        height: 25rem;;
-    }
-
-    .contacto {
-        width: 18rem;
-        margin-left: 1.5rem;
-    }
-    .footer p {
-        margin-left: 1.4375rem;
-    }
-
-}
-
-@media (max-width: 939px)and (min-width: 769px){
-    
-    ul li a {
-    font-size: 0.9rem;
-    }
-
-    .grid-tarjetas {
-        grid-template-columns: repeat(3, 14rem);
-        grid-template-rows: 22rem 22rem;
-    }
-
-    .tarjetasContainer {
-        width: 14rem;
-        height: 22rem;
-    }
-    .tarjetasContainer h3 {
-        font-size: .9rem;
-    }
-
-    .tarjetasContainer button {
-        height: 2rem;
-        width: 8rem;
-        border-radius: 4px;
-    }
-    
-    .tarjetasContainer a {
-        font-size: .8rem;
-    }
-
-    .logoFooter {
-        width: 20rem;
-        margin-top: 5rem;
-    }
-
-    .contacto{
-        width: 20rem;
-    }
-
-    .footer p {
-        font-size: 18px;
-        margin-left: 1.4375rem;
-    }
-
-    .formulario {
-        margin-left: -1.25rem;
-    }
-
-    .input {
-        width: 20rem;
-    }
-
-    .textArea {
-        width: 20rem;
-    }
-
-    /*PAGINAS SECUNDARIAS*/
-
-    .servicios img {
-        width: 23rem;
-    }
-
-    .servicios ul {
-        width: 18rem;
-    }
-
-}
-
-/**TABLET 768px**/
-
-@media (max-width: 768px){
-
-    .header{
-        height: 20rem;
-    }
-
-    .imageLogo{
-        height: 6rem;
-    }
-
-    .nav{
-        margin-right: 1rem;
-    }
-
-    nav ul li a {
-        font-size: 15px;
-    }
-
-    .bienvenida{
-        height: 300px;
-        border-radius: 0 0 80px 0;
-    }
-
-    .bienvenida h1 {
-        height: 35%;
-        font-size: 2.5rem;
-    }
-
-    .lineaRoja{
-        width: 9rem;
-    }
-
-    .bienvenida h3 {
-        font-size: 23px;
-    }
-
-    .nuestrosServicios h2{
-        font-size: 3rem;
-    }
-
-    .grid-tarjetas {
-        grid-template-columns: repeat(2, 18rem);
-        column-gap: 4rem;
-    }
-
-    .confian{
-        height: 25rem;
-    }
-    .confian h2 {
-        font-size: 2.5rem;
-    }
-
-    .lineaRoja3 {
-        border: 3px solid;
-        width: 8rem;
-    }
-
-    .empresas{
-        height: 17%;
-        margin-top: 2.125rem;
-    }
-
-    .logoFooter {
-        width: 20rem;
-        margin-top: 5rem;
-    }
-
-    .contacto{
-        width: 20rem;
-    }
-
-    .footer p {
-        font-size: 18px;
-        margin-left: 1.4375rem;
-    }
-
-    .formulario {
-        margin-left: -1.25rem;
-    }
-
-    .input {
-        width: 20rem;
-    }
-
-    .textArea {
-        width: 20rem;
-    }
-
-    /*PAGINAS SECUNDARIAS*/
-
-    .servicios img {
-        width: 20rem;
-        }
-    
-        .servicios ul {
-    
-            width: 15rem;
-        }
-    
-        .servicios p {
-            font-size: 1.3rem;
-        }
-
-        .contacto2 {
-            width: 20rem;
-        }
-        
-        .footer2 p {
-            font-size: 0.8rem;
-        }
-    
-        .contacto2 img {
-            height: 0.8rem;
-            width: 0.8rem;
-        }
-
-}
-
-
-@media (max-width: 715px) and (min-width: 661px){
-    nav ul li a {
-        font-size: 12px;
-    }
-    .grid-tarjetas {
-        column-gap: 2rem;
-    }
-
-    .logoFooter {
-        width: 16rem;
-        margin-top: 5rem;
-    }
-
-    .contacto{
-        width: 16rem;
-    }
-
-    .contacto img {
-        height: 1rem;
-        width: 1rem;
-    }
-
-    .footer p {
-        font-size: 15px;
-        margin-left: 1rem;
-    }
-
-
-    .formulario {
-        margin-left: -1.25rem;
-    }
-
-    .input {
-        width: 17rem;
-        height: 2.5rem;
-    }
-
-    .textArea {
-        width:17rem;
-    }
-
-    .position-button {
-        right: .9rem;
-        bottom: 1rem;
-    }
-}
-
-
-@media (max-width: 660px) and (min-width: 431px){
-    header ul {
-
-        gap: 5px;
-    }
-    
-    .bienvenida {
-        height: 250px;
-    }
-
-    .bienvenida h1 {
-        font-size: 2rem;
-    }
-
-    .lineaRoja {
-        width: 7rem;
-    }
-
-    .bienvenida h3 {
-        font-size: 18px;
-    }
-    .tituloSubrayado2{
-        height: 8.5rem;
-    }
-    .nuestrosServicios h2 {
-        font-size: 2rem;
-    }
-
-    .lineaRoja2 {
-        border: .2rem solid;
-        width: 3rem;
-    }
-    .grid-tarjetas {
-        grid-template-columns: repeat(2, 15rem);
-        grid-template-rows: 20rem 20rem;
-    }
-    .tarjetasContainer{
-        width: 15rem;
-        height: 20rem;
-    }
-    .tarjetasContainer h3 {
-        font-size: .8rem;
-    }
-
-    .tarjetasContainer button {
-        height: 2rem;
-        width: 8rem;
-        border-radius: 5px;
-    }
-    .tarjetasContainer a {
-        font-size: .8rem;
-    }
-
-    .confian {
-        height: 20rem;
-    }
-
-    .confian h2 {
-        font-size: 2rem;
-    }
-    .lineaRoja3 {
-        width: 7rem;
-    }
-    .empresas {
-        height: 18%;
-    }
-
-    .footer {
-        height: 28rem;
-    }
-
-    .logoFooter {
-        width: 14rem;
-    }
-
-    .contacto {
-        margin-left: 1.1rem;
-    }
-
-    .footer p {
-        font-size: 12px;
-        margin-left: .5rem;
-    }
-
-    .contacto img {
-        height: .5rem;
-        width: .5rem;
-    }
-
-    .input {
-        width: 15rem;
-        height: 2rem;
-    }
-    .textArea {
-        width: 15rem;
-    }
-    .position-button {
-        bottom: 2rem;
-    }
-
-        /*PAGINAS SECUNDARIAS*/
-
-        .servicios img {
-            width: 20rem;
-        }
-    
-        .servicios ul {
-            width: 15rem;
-        }
-
-}
-
-@media (max-width: 670px) and (min-width: 431px){
-
-    .servicios .tituloSubrayado2 h2{
-        font-size: 2.25rem;
-    }
-
-    .info{
-        flex-direction: column;
-        gap:20px;
-    }
-
-    .info2{
-        display: flex;
-        flex-flow: row wrap-reverse;
-        flex-direction: column;
-        gap:20px;
-    }
-
-
-    .servicios ul {
-        height: 100%;
-    }
-
-    .footer2{
-        flex-direction: column;
-        height: 15rem;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .footer2 p {
-        font-size: 1rem;
-    }
-
-    .contacto2 img {
-        height: 1em;
-        width: 1rem;
-    }
-}
-
-
-
-@media (max-width: 660px) and (min-width: 551px){
-    nav ul li a {
-        font-size: 10px;
-    }
-
-    @media (max-width: 611px) and (min-width: 551px){
-        .grid-tarjetas {
-            column-gap: 1rem;
-        }
-        
-        .input{
-            width: 13rem;
-        }
-
-        .textArea{
-            width: 13rem;
-        }
-
-        .formulario {
-            margin-left: -3.25rem;
-        }
-    }
-
-    
-}
-
-@media (max-width: 550px) and (min-width: 501px){
-    
-    .header {
-        height: 10rem;
-    }
-
-    .imageLogo {
-        height: 4rem;
-        margin-left: 1rem;
-        margin-top: 1rem;
-    }
-
-    nav ul li a {
-        font-size: 10px;
-    }
-
-    .grid-tarjetas{
-        grid-template-columns: repeat(2, 14rem);
-        gap: 2rem;
-    }
-
-    .tarjetasContainer {
-        width: 14rem;
-    }
-
-
-    .confian{
-        height: 40rem;
-    }
-    
-    .confian h2 {
-        font-size: 1.65rem;
-    }
-
-    .lineaRoja3 {
-        border: 2px solid;
-        width: 6rem;
-    }
-
-    .empresas {
-        flex-direction: column;
-        gap: 3.5rem;
-        align-items: center;
-        margin: 0;
-        padding: 2.5rem;
-    }
-
-    .logoEmpresas{
-        width: 50%;
-    }
-
-    .footer {
-        flex-direction: column;
-        position: relative; 
-        height: 55rem;
-    }
-
-    .logoFooter {
-        width: 22rem;
-    }
-
-
-    .datos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-    }
-
-    .contacto{
-        margin-left: 3rem;
-    }
-
-    .contacto img {
-        width: 1rem;
-        height: 1rem;
-    }
-
-    .footer p {
-        font-size: 20px;
-        margin-left: .5rem;
-    }
-
-    .formulario {
-        margin: 0;
-        text-align: center;
-        height: 340px;
-        margin-bottom: 35px;
-    }
-
-    .input {
-        width: 20rem;
-        height: 3rem;
-    }
-
-    .textArea{
-        width: 20rem;
-    }
-
-    .position-button{
-        right: 8.375rem;
-        bottom: 1rem;
-    }
-    
-}
-
-
-@media (max-width: 500px) and (min-width: 431px){
-    .header {
-        height: 13rem;
-    }
-
-    .imageLogo {
-        height: 5rem;
-        margin-left: 1rem;
-        margin-top: 1rem;
-    }
-    
-    .nav{
-        display: none;
-    }
-
-    
-    .bienvenida {
-        height: 200px;
-        border-radius: 0 0 50px 0;
-    }
-    
-    .bienvenida h1 {
-        height: 25%;
-        font-size: 1.5rem;
-    }
-
-    .lineaRoja {
-        width: 5rem;
-    }
-
-    .bienvenida h3 {
-        font-size: 15px;
-        width: 80%;
-        margin: auto;
-        padding-top: 0;
-    }
-
-    .bienvenida h3 br {
-        display: none;
-    }
-    
-    .nuestrosServicios h2 {
-        font-size: 1.65rem;
-        margin-left: -1.25rem;
-    }
-
-
-    .lineaRoja2 {
-        border: 3px solid;
-        width: 2rem;
-    }
-
-    .tituloSubrayado2 {
-        height: 7.5rem;
-        padding-top: 2rem;
-    }
-
-    .grid-tarjetas {
-        grid-template-columns: repeat(1, 18rem);
-        grid-template-rows: 25rem 25rem;
-    }
-
-    .tarjetasContainer{
-    width: 18rem;
-    height: 25rem;
-    }
-
-    .confian {
-        height: auto;
-    }
-    
-    .confian h2 {
-        font-size: 1.65rem;
-    }
-
-    .lineaRoja3 {
-        border: 2px solid;
-        width: 6rem;
-    }
-
-    .empresas {
-        flex-direction: column;
-        gap: 3.5rem;
-        align-items: center;
-        margin: 0;
-        padding: 2.5rem;
-    }
-
-    .logoEmpresas{
-        width: 50%;
-    }
-
-    .footer {
-        flex-direction: column;
-        position: relative; 
-        height: 55rem;
-    }
-
-    .logoFooter {
-        width: 22rem;
-    }
-
-
-    .datos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-    }
-
-    .contacto{
-        margin-left: 3rem;
-    }
-
-    .contacto img {
-        width: 1rem;
-        height: 1rem;
-    }
-
-    .footer p {
-        font-size: 20px;
-        margin-left: .5rem;
-    }
-
-    .formulario {
-        margin: 0;
-        text-align: center;
-        height: 340px;
-        margin-bottom: 35px;
-    }
-
-    .input {
-        width: 20rem;
-        height: 3rem;
-    }
-
-    .textArea{
-        width: 20rem;
-    }
-
-    .position-button{
-        right: 8.375rem;
-        bottom: 1rem;
-    }
-
-}
-
-
-/**MOBILE GRANDE 430px**/
-
-@media (max-width: 430px){
-
-    .header {
-        height: 10rem;
-    }
-
-    .imageLogo {
-        height: 4rem;
-        margin-left: 1rem;
-        margin-top: 1rem;
-    }
-
-    .nav{
-        display: none;
-    }
-
-    .bienvenida {
-        height: 200px;
-        border-radius: 0 0 50px 0;
-    }
-    
-    .bienvenida h1 {
-        height: 25%;
-        font-size: 1.5rem;
-    }
-
-    .lineaRoja {
-        width: 5rem;
-    }
-
-    .bienvenida h3 {
-        font-size: 15px;
-        width: 80%;
-        margin: auto;
-        padding-top: 0;
-    }
-
-    .bienvenida h3 br {
-        display: none;
-    }
-    
-    .nuestrosServicios h2 {
-        font-size: 1.65rem;
-        margin-left: -1.25rem;
-    }
-
-
-    .lineaRoja2 {
-        border: 3px solid;
-        width: 2rem;
-    }
-
-    .tituloSubrayado2 {
-        height: 7.5rem;
-        padding-top: 2rem;
-    }
-
-    .grid-tarjetas {
-        grid-template-columns: repeat(1, 18rem);
-    }
-
-    .confian {
-        height: auto;
-    }
-    
-    .confian h2 {
-        font-size: 1.65rem;
-    }
-
-    .lineaRoja3 {
-        border: 2px solid;
-        width: 6rem;
-    }
-
-    .empresas {
-        flex-direction: column;
-        gap: 3.5rem;
-        align-items: center;
-        margin: 0;
-        padding: 2.5rem;
-    }
-
-    .logoEmpresas{
-        width: 50%;
-    }
-
-    .footer {
-        flex-direction: column;
-        position: relative; 
-        height: 55rem;
-    }
-
-    .logoFooter {
-        width: 22rem;
-    }
-
-
-    .datos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-    }
-
-    .formulario {
-        margin: 0;
-        text-align: center;
-        height: 340px;
-    }
-
-    .position-button{
-        right: 4.375rem;
-        bottom: 0.625rem;
-    }
-
-    /*PAGINAS SECUNDARIAS*/
-
-    .servicios .tituloSubrayado2 h2{
-        font-size: 2.25rem;
-    }
-
-    .info{
-        flex-direction: column;
-        gap:20px;
-        ;
-    }
-
-    .info2{
-        display: flex;
-        flex-flow: row wrap-reverse;
-        gap:20px;
-    }
-
-
-    .servicios ul {
-        height: 100%;
-    }
-
-    .footer2{
-        flex-direction: column;
-        height: 15rem;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .footer2 p {
-        font-size: 1rem;
-    }
-
-    .contacto2 img {
-        height: 1em;
-        width: 1rem;
-    }
-
-}
-
-/**MOBILE CHICO 375px**/
-
-@media (max-width: 376px){
-    
-    .nuestrosServicios h2 {
-        font-size: 1.6rem;
-    }
-
-
-    .confian h2 {
-        font-size: 1.6rem;
-    }
-
-/*PAGINAS SECUNDARIAS*/
-
-    .servicios .tituloSubrayado2 h2{
-        font-size: 2rem;
-    }
-
-
-    .info img{
-        width: 15rem;
-    }
-
-    
-    .info2 img{
-        width: 15rem;
-    }
-
-    .servicios ul {
-        height: 100%;
-    }
-
-}
-
-
-/**MOBILE CHICO 320px**/
-
-@media (max-width: 320px){
-
-    .bienvenida {
-        height: 180px;
-        border-radius: 0 0 50px 0;
-    }
-
-    .bienvenida h1{
-        font-size: 1.3rem;
-    }
-
-    .lineaRoja {
-        width: 3.5rem;
-    }
-
-    .bienvenida h3 {
-        font-size: 12px;
-    }
-
-    .lineaRoja2 {
-        border: 2px solid;
-        width: 1.5rem;
-    }
-
-    .nuestrosServicios h2 {
-        font-size: 1.3rem;
-    }
-
-    .grid-tarjetas{
-        grid-template-columns: repeat(1, 16rem);
-        row-gap: 1rem;
-    }
-
-    .tarjetasContainer { 
-        width: 16rem;
-        height: 25rem;
-    }
-
-    .tarjetasContainer h3 {
-        font-size: 1rem;
-    }
-
-    .tarjetasContainer button {
-        height: 2rem;
-        width: 8rem;
-    }
-
-    .tarjetasContainer a {
-        font-size: 12px;
-    }
-
-    .confian h2 {
-        font-size: 1.3rem;
-    }
-
-    .lineaRoja3 {
-        border: 2px solid;
-        width: 4rem;
-    }
-
-    .logoFooter {
-        width: 20rem;
-    }
-    .contacto{
-        width: 15rem;
-        
-    }
-
-    .contacto img {
-        height: 1rem;
-        width: 1rem;
-    }
-
-    .footer p {
-        font-size: 15px;
-    }
-
-    .input {
-        width: 16rem;
-    }
-
-    .textArea {
-        width: 16rem;
-    }
-    
-    .footer button {
-        width: 5.25rem;
-        height: 2rem;
-    }
-    
-    .position-button{
-        right: 3.375rem;
-    }
-
-    /*PAGINAS SECUNDARIAS*/
-
-    .servicios .tituloSubrayado2 h2{
-        font-size: 1.5rem;
-    }
-
-
-    .info img{
-        width: 15rem;
-    }
-
-    
-    .info2 img{
-        width: 15rem;
-    }
-
-    .servicios ul {
-        width: 12rem;
-        height: 100%;
-    }
-}
-
-
-/*******BOOSTRAP*******/
-
-
+/*# sourceMappingURL=style.css.map */

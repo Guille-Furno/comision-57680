@@ -1,0 +1,28 @@
+.footer2{
+    height: 8.25rem;
+    background-color: map-get($colores, color2);
+    @include flex(none,none,space-evenly,none,none);
+
+    .contacto2{
+        width: 23.5rem;
+        @include flex(none,none,center,center,none);
+
+        a{
+            @include flex(none,none,none,center,none);
+            text-decoration: none;
+        }
+            
+        img{
+            height: 1.25rem;
+            width: 1.25rem;
+        }
+
+        p{
+            color: map-get($colores, color1);
+            font-size: 1.125rem;
+            margin-left: .625rem;
+        }
+    }
+}
+
+

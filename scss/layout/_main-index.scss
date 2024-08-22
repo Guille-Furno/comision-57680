@@ -1,0 +1,148 @@
+
+
+.bienvenida{
+    height: 400px;
+    background-color: map-get($colores, color2);
+    border-radius: 0 0 100px 0;
+    box-shadow: 5px 5px 10px rgb(143 141 141);
+    div{
+        @include flex(column,none,center,center,none);
+        height: 50%;
+        text-shadow: 5px 5px 10px rgb(0 0 0);
+        
+        h1{
+            color: map-get($colores, color1);
+            @include flex(row,none,center,center,none);
+            height: 100%;
+            margin-bottom: -3.5rem; 
+        }
+        span{
+            border: 2px solid;
+            border-radius: 15px;
+            color: map-get($colores, color3);
+            width: 13rem;
+            box-shadow: 5px 5px 10px rgb(0 0 0);
+        }
+    }
+    h3{
+        color: map-get($colores, color1);
+        @include flex(row,none,center,center,none);
+        font-variant: small-caps;
+        text-align: center;
+        padding-top: .625rem;
+        }
+    
+}
+
+.tituloSubrayado2{
+    height: 12.5rem;
+    @include flex(column,nowrap,center,center,none);
+    padding-top: 1rem;
+
+    h2{
+        @include flex(row,none,center,center,none);
+        color: map-get($colores, color4);
+        font-weight: bold;
+        text-shadow: 7px 7px 10px rgb(143 141 141);
+            &:hover{
+                transition: 0.2s;
+                text-shadow: 7px 7px 10px rgb(91, 91, 91);
+            }
+        span{
+            border: .25rem solid;
+            border-radius: .625rem;
+            color: map-get($colores, color3);
+            width: 4rem;
+            transform: rotate(90deg);
+        }
+    }
+}
+
+
+.slide-in-blurred-top {
+	-webkit-animation: slide-in-blurred-top 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-top 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+
+
+ @-webkit-keyframes slide-in-blurred-top {
+    0% {
+      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-top {
+    0% {
+      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+
+
+.grid-tarjetas{
+    @include grid (3 , 20.5rem , 3rem , 4.0625rem);
+    justify-content: center;
+    padding: 1.875rem 0 6.625rem 0;
+    }
+
+
+
+.confian {
+    height: 35rem;
+    background-color: map-get($colores, color1);
+    box-shadow: 5px 5px 10px rgb(143 141 141);
+
+    .tituloSubrayado2{
+        height: 40%;
+        
+        h2{
+            color: map-get($colores, color4);
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 5px 5px 10px rgb(143 141 141);
+        }
+        span{
+            border: .25rem solid;
+            border-radius: 625rem;
+            color: map-get($colores, color3);
+            width: 11rem;
+        }
+    }
+}
+
+.empresas{
+    @include flex(row,none,space-evenly,none,none);
+    height: 15%;
+    margin-top: 8.125rem;
+}
+

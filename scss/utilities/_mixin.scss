@@ -1,0 +1,19 @@
+@mixin flex($direction, $wrap, $justify, $align, $gap){
+    
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+
+    
+    
+}
+
+@mixin grid ($columnas , $ancho , $gapAncho , $gapAlto){
+    display: grid;
+    grid-template-columns: repeat($columnas , $ancho);
+    column-gap: $gapAncho;
+    row-gap: $gapAlto;
+}

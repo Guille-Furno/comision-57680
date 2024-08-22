@@ -1,0 +1,21 @@
+.header2 {
+    height: 12rem;
+    width: 100%;
+    background-image: none;
+    background-color: map-get($colores, color2);
+    @include flex(row,none,space-between,flex-start,none);
+
+    nav{
+        margin-top: 4.25rem;
+        width: 30rem;
+
+        ul{
+            list-style: none;
+            @include flex(none,none,space-evenly,center,none);
+            display: flex;
+            margin-block: 0;
+            padding: 0;
+            text-shadow: 6px 6px 5px #0e171f;
+        }
+    }
+}
