@@ -1,0 +1,63 @@
+@media (max-width: 320px){
+    header{
+        height: 10rem;
+
+        .imageLogo{
+            img{
+                height: 4rem;
+            }
+        }
+    }
+
+    .bienvenida{
+        div{
+            h1{
+                font-size: 1.2rem;
+            }
+            span{
+                width: 3rem;
+                border: 1.5px solid;
+            }
+        }
+        h3{
+            font-size: 14px;
+        }
+    }
+
+    #nuestrosServicios{
+        .tituloSubrayado2{
+            h2{
+                font-size: 1.3rem;
+            }
+        }
+
+        .grid-tarjetas{
+            @include grid (1 , 16rem , none , none);
+
+            .tarjetasContainer{
+                width: 16rem;
+            }
+        }
+    }
+    
+    .confian{
+        .tituloSubrayado2{
+            h2{
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .footer{
+        .datos{
+            .logoFooter{
+                width: 18rem;
+            }
+        .contacto{
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

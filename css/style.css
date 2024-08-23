@@ -409,7 +409,7 @@ header nav a:hover {
   width: 4rem;
   transform: rotate(90deg);
 }
-.servicios .info {
+.servicios .info, .servicios .info2 {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -419,10 +419,10 @@ header nav a:hover {
   gap: none;
   margin: 2rem 0;
 }
-.servicios .info img {
+.servicios .info img, .servicios .info2 img {
   width: 30rem;
 }
-.servicios .info ul {
+.servicios .info ul, .servicios .info2 ul {
   height: 411px;
   width: 30rem;
   display: flex;
@@ -434,13 +434,12 @@ header nav a:hover {
   margin: 0;
   padding: 0;
 }
-.servicios .info ul p {
+.servicios .info ul p, .servicios .info2 ul p {
   font-size: 1.5625rem;
 }
-.servicios .info .redes-img {
+.servicios .info .redes-img, .servicios .info2 .redes-img {
   height: 28.125rem;
 }
-
 .footer2 {
   height: 8.25rem;
   background-color: #1E2D3B;
@@ -529,43 +528,722 @@ header nav a:hover {
 
 /*******@MEDIA*******/
 /**PANTALLA 4K**/
-/*INDEX*/
-@media (min-width: 1441px) and (max-width: 2561px) {
-  header {
-    height: 35rem;
+@media (max-width: 1170px) {
+  header .nav {
+    margin-right: 3rem;
   }
-  header img {
-    height: 11.5rem;
-    margin-left: 4rem;
-    margin-top: 4rem;
+  header .nav a {
+    font-size: 1rem;
   }
-  .nav a {
+  #nuestrosServicios .grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 18rem);
+    column-gap: 2rem;
+    row-gap: none;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer {
+    width: 18rem;
+    height: 25rem;
+  }
+  footer .contacto {
+    width: 18rem;
+    margin-left: 1.5rem;
+  }
+  footer .contacto p {
+    margin-left: 1.4375rem;
+  }
+  /*PAGINAS SECUNDARIAS*/
+  .header2 .nav {
+    margin-right: 2rem;
+  }
+  .servicios .info img, .servicios .info2 img {
+    width: 23rem;
+  }
+  .servicios .info ul, .servicios .info2 ul {
+    width: 23rem;
+  }
+}
+@media (max-width: 939px) {
+  header .nav a {
+    font-size: 0.9rem;
+  }
+  .bienvenida h3 {
     font-size: 1.5625rem;
   }
-  .nav a:hover {
-    font-weight: bold;
-    transition: 0.2s;
+  #nuestrosServicios .grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 14rem);
+    column-gap: none;
+    row-gap: none;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer {
+    width: 14rem;
+    height: 22rem;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer h3 {
+    font-size: 0.9rem;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer button {
+    height: 2rem;
+    width: 8rem;
+    border-radius: 4px;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer button a {
+    font-size: 0.8rem;
+  }
+  .confian {
+    height: 25rem;
+  }
+  .confian .tituloSubrayado2 {
+    height: 35%;
+  }
+  .confian .empresas {
+    height: 18%;
+    margin-top: 5.125rem;
+  }
+  .footer .datos .logoFooter {
+    width: 20rem;
+    margin-top: 5rem;
+  }
+  .footer .datos .contacto {
+    width: 20rem;
+  }
+  .footer .datos .contacto img {
+    height: 1rem;
+    width: 1rem;
+  }
+  .footer .datos .contacto p {
+    font-size: 15px;
+    margin-left: 1.4375rem;
+  }
+  .footer .formulario {
+    margin-left: -1.25rem;
+  }
+  .footer .formulario .input {
+    width: 20rem;
+  }
+  .footer .formulario .textArea {
+    width: 20rem;
+  }
+  /*PAGINAS SECUNDARIAS*/
+  .servicios img {
+    width: 23rem;
+  }
+  .servicios ul {
+    width: 18rem;
   }
 }
-.bienvenida {
-  height: 600px;
+@media (max-width: 768px) {
+  header {
+    height: 20rem;
+  }
+  header .imageLogo {
+    height: 6rem;
+  }
+  header .nav {
+    margin-right: 2rem;
+  }
+  header .nav a {
+    font-size: 12px;
+  }
+  .bienvenida {
+    height: 260px;
+    border-radius: 0 0 80px 0;
+  }
+  .bienvenida div h1 {
+    height: 40%;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .bienvenida div span {
+    width: 7rem;
+  }
+  .bienvenida h3 {
+    font-size: 23px;
+  }
+  #nuestrosServicios .tituloSubrayado2 h2 {
+    font-size: 2.75rem;
+  }
+  #nuestrosServicios .tituloSubrayado2 h2 span {
+    width: 3rem;
+  }
+  #nuestrosServicios .grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 18rem);
+    column-gap: 3rem;
+    row-gap: none;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer {
+    width: 18rem;
+    height: 25rem;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer h3 {
+    font-size: 1.125rem;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer button {
+    height: 2.3rem;
+    width: 9rem;
+    border-radius: 8px;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer button a {
+    font-size: 1rem;
+  }
+  .confian {
+    height: 25rem;
+  }
+  .confian .tituloSubrayado2 h2 {
+    font-size: 2.75rem;
+  }
+  .confian .tituloSubrayado2 .lineaRoja3 {
+    border: 3px solid;
+    width: 6rem;
+  }
+  .confian .empresas {
+    height: 17%;
+    margin-top: 4.125rem;
+  }
+  .footer .datos .logoFooter {
+    width: 18rem;
+    margin-top: 5rem;
+  }
+  .footer .datos .contacto {
+    width: 18rem;
+  }
+  .footer .datos .contacto p {
+    font-size: 15px;
+    margin-left: 1.4375rem;
+  }
+  .footer .formulario {
+    margin-left: -1.25rem;
+  }
+  .footer .formulario .input {
+    width: 20rem;
+  }
+  .footer .formulario .textArea {
+    width: 20rem;
+  }
+  /*PAGINAS SECUNDARIAS*/
+  .header2 .nav {
+    margin-right: 0rem;
+  }
+  .servicios div h2 {
+    font-size: 2.5rem;
+  }
+  .servicios div h2 span {
+    width: 3rem;
+  }
+  .servicios .info, .servicios .info2 {
+    margin: 0;
+    height: 300px;
+  }
+  .servicios .info img, .servicios .info2 img {
+    width: 20rem;
+  }
+  .servicios .info ul, .servicios .info2 ul {
+    width: 15rem;
+  }
+  .servicios .info ul p, .servicios .info2 ul p {
+    font-size: 1.3rem;
+  }
+  .footer2 .contacto2 {
+    width: 20rem;
+  }
+  .footer2 .contacto2 img {
+    height: 0.8rem;
+    width: 0.8rem;
+  }
+  .footer2 .contacto2 p {
+    font-size: 0.8rem;
+  }
 }
-.bienvenida h1 {
-  font-size: 4.5rem;
+@media (max-width: 715px) {
+  header .nav a {
+    font-size: 12px;
+  }
+  #nuestrosServicios .grid-tarjetas {
+    column-gap: 2rem;
+  }
+  .footer .datos .logoFooter {
+    width: 18rem;
+    margin-top: 5rem;
+  }
+  .footer .datos .contacto {
+    width: 16rem;
+  }
+  .footer .datos .contacto img {
+    height: 1rem;
+    width: 1rem;
+  }
+  .footer .datos .contacto p {
+    font-size: 15px;
+    margin-left: 1rem;
+  }
+  .footer .formulario {
+    margin-left: -1.25rem;
+  }
+  .footer .formulario .input {
+    width: 17rem;
+    height: 2.5rem;
+  }
+  .footer .formulario .textArea {
+    width: 17rem;
+  }
+  .footer .formulario .position-button {
+    right: 0.9rem;
+    bottom: 1rem;
+  }
 }
-.bienvenida h1 span {
-  border: 4px solid;
-  width: 16rem;
+@media (max-width: 670px) {
+  header .imageLogo img {
+    height: 5rem;
+  }
+  header .nav {
+    margin-right: 4rem;
+  }
+  header .nav ul {
+    gap: 5px;
+  }
+  .bienvenida div h1 {
+    font-size: 2.2rem;
+  }
+  .bienvenida div span {
+    width: 6rem;
+  }
+  .bienvenida h3 {
+    font-size: 20px;
+  }
+  #nuestrosServicios .tituloSubrayado2 h2 {
+    font-size: 2.5rem;
+  }
+  #nuestrosServicios .tituloSubrayado2 h2 span {
+    border: 0.22rem solid;
+  }
+  #nuestrosServicios .grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 15rem);
+    column-gap: 2rem;
+    row-gap: none;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer {
+    width: 15rem;
+    height: 22rem;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer button {
+    height: 2rem;
+    width: 8rem;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer button a {
+    font-size: 0.8rem;
+  }
+  .confian .tituloSubrayado2 h2 {
+    font-size: 2.5rem;
+  }
+  .confian .tituloSubrayado2 h2 span {
+    width: 5rem;
+  }
+  .confian .empresas {
+    height: 14%;
+  }
+  .footer .datos {
+    margin-bottom: 8rem;
+  }
+  .footer .datos .logoFooter {
+    width: 15rem;
+  }
+  .footer .datos .contacto {
+    margin-left: 1rem;
+  }
+  .footer .datos .contacto img {
+    height: 0.8rem;
+    width: 0.8rem;
+  }
+  .footer .datos .contacto p {
+    font-size: 13px;
+  }
+  .footer .formulario {
+    margin-left: -0.25rem;
+  }
+  .footer .formulario .input {
+    width: 15rem;
+  }
+  .footer .formulario .textArea {
+    width: 15rem;
+  }
+  /*PAGINAS SECUNDARIAS*/
+  .header2 .nav {
+    margin-right: 0rem;
+  }
+  .servicios div h2 {
+    font-size: 2.5rem;
+  }
+  .servicios div h2 span {
+    width: 3rem;
+  }
+  .servicios .info, .servicios .info2 {
+    margin: 0;
+    height: 300px;
+  }
+  .servicios .info img, .servicios .info2 img {
+    width: 15rem;
+  }
+  .servicios .info ul, .servicios .info2 ul {
+    width: 13rem;
+  }
+  .servicios .info ul p, .servicios .info2 ul p {
+    font-size: 1.3rem;
+  }
+  .footer2 .contacto2 {
+    width: 20rem;
+  }
+  .footer2 .contacto2 img {
+    height: 0.7rem;
+    width: 0.7rem;
+  }
+  .footer2 .contacto2 p {
+    font-size: 0.7rem;
+  }
 }
-.bienvenida h3 {
-  font-size: 3.25rem;
+@media (max-width: 550px) {
+  header {
+    height: 10rem;
+  }
+  header img {
+    height: 4rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  header .nav a {
+    font-size: 11px;
+  }
+  .bienvenida {
+    height: 200px;
+  }
+  .bienvenida div h1 {
+    font-size: 1.8rem;
+  }
+  .bienvenida div span {
+    width: 5rem;
+  }
+  .bienvenida div h3 {
+    font-size: 15px;
+  }
+  #nuestrosServicios .tituloSubrayado2 h2 {
+    font-size: 2rem;
+  }
+  #nuestrosServicios .tituloSubrayado2 h2 span {
+    width: 2.5rem;
+    border: 0.2rem solid;
+  }
+  #nuestrosServicios .grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 13rem);
+    column-gap: 2rem;
+    row-gap: none;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer {
+    width: 13rem;
+    height: 20rem;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer button {
+    height: 1.8rem;
+    width: 6rem;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer button a {
+    font-size: 0.6rem;
+  }
+  .confian {
+    height: 45rem;
+  }
+  .confian .tituloSubrayado2 {
+    padding-top: 0;
+  }
+  .confian .tituloSubrayado2 h2 {
+    font-size: 2rem;
+  }
+  .confian .tituloSubrayado2 .lineaRoja3 {
+    border: 2px solid;
+    width: 5rem;
+  }
+  .confian .empresas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: none;
+    align-items: center;
+    gap: 3.5rem;
+    margin: 0;
+  }
+  .confian .empresas .logoEmpresas {
+    width: 40%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: none;
+    align-items: none;
+    gap: none;
+    position: relative;
+    height: 55rem;
+  }
+  .footer .datos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    margin: 0;
+  }
+  .footer .datos .logoFooter {
+    width: 22rem;
+  }
+  .footer .datos .contacto {
+    justify-content: center;
+  }
+  .footer .datos .contacto img {
+    width: 1rem;
+    height: 1rem;
+  }
+  .footer .datos .contacto p {
+    font-size: 20px;
+    margin-left: 0.5rem;
+  }
+  .footer .formulario {
+    margin: 0;
+    text-align: center;
+    height: 340px;
+    margin-bottom: 35px;
+  }
+  .footer .formulario .input {
+    width: 20rem;
+    height: 3rem;
+  }
+  .footer .formulario .textArea {
+    width: 20rem;
+  }
+  .footer .formulario .position-button {
+    right: 7.375rem;
+    bottom: 1rem;
+  }
+  /*PAGINAS SECUNDARIAS*/
+  .servicios .info, .servicios .info2 {
+    height: 100%;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .servicios .info img, .servicios .info2 img {
+    margin-bottom: 60px;
+  }
+  .servicios .info ul, .servicios .info2 ul {
+    height: 100%;
+  }
+  .servicios .info2 {
+    flex-flow: column-reverse;
+  }
+  .servicios .info2 img {
+    margin-bottom: 40px;
+  }
+  .servicios .info2 ul {
+    height: 100%;
+  }
+  .footer2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer2 .contacto2 p {
+    font-size: 1rem;
+  }
 }
-
-.tituloSubrayado2 {
-  padding: 50px;
+@media (max-width: 500px) {
+  header {
+    height: 13rem;
+  }
+  header img {
+    height: 5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  header .nav {
+    display: none;
+  }
+  .bienvenida {
+    height: 200px;
+    border-radius: 0 0 50px 0;
+  }
+  .bienvenida h1 {
+    height: 25%;
+    font-size: 1.5rem;
+  }
+  .bienvenida span {
+    width: 5rem;
+  }
+  .bienvenida h3 {
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
+    padding-top: 0;
+  }
+  .bienvenida h3 br {
+    display: none;
+  }
+  #nuestrosServicios .tituloSubrayado {
+    height: 7.5rem;
+    padding-top: 2rem;
+  }
+  #nuestrosServicios .tituloSubrayado h2 {
+    font-size: 1.65rem;
+    margin-left: -1.25rem;
+  }
+  #nuestrosServicios .tituloSubrayado h2 span {
+    border: 3px solid;
+    width: 2rem;
+  }
+  #nuestrosServicios .grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(1, 18rem);
+    column-gap: none;
+    row-gap: none;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer {
+    width: 18rem;
+    height: 25rem;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer button {
+    height: 2rem;
+    width: 8rem;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer button a {
+    font-size: 0.9rem;
+  }
+  .confian {
+    height: 40rem;
+  }
+  .confian h2 {
+    font-size: 1.65rem;
+  }
+  .confian span {
+    border: 2px solid;
+    width: 6rem;
+  }
+  .confian .empresas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: none;
+    align-items: center;
+    gap: 3.5rem;
+    margin: 0;
+  }
+  .confian .empresas .logoEmpresas {
+    width: 40%;
+  }
+  /*PAGINAS SECUNDARIAS*/
+  .header2 {
+    height: 10rem;
+  }
 }
-.tituloSubrayado2 h2 {
-  font-size: 65px;
+@media (max-width: 430px) {
+  #nuestrosServicios .tituloSubrayado2 {
+    height: 8rem;
+  }
+  #nuestrosServicios .tituloSubrayado2 h2 {
+    font-size: 1.7rem;
+    margin-left: -1.25rem;
+  }
+  #nuestrosServicios .tituloSubrayado2 h2 span {
+    border: 2px solid;
+    width: 2rem;
+  }
+  .confian .tituloSubrayado2 h2 {
+    font-size: 1.7rem;
+  }
+  .confian .empresas .logoEmpresas {
+    width: 50%;
+  }
+  /*PAGINAS SECUNDARIAS*/
+  .servicios .tituloSubrayado2 h2 {
+    font-size: 1.8rem;
+  }
+  .servicios .tituloSubrayado2 h2 span {
+    border: 0.2rem solid;
+    width: 2.5rem;
+  }
+}
+@media (max-width: 376px) {
+  header .imageLogo img {
+    height: 4rem;
+  }
+  .bienvenida div h1 {
+    font-size: 1.2rem;
+  }
+  #nuestrosServicios .tituloSubrayado2 {
+    height: 8rem;
+  }
+  #nuestrosServicios .tituloSubrayado2 h2 {
+    font-size: 1.3rem;
+  }
+  .confian .tituloSubrayado2 h2 {
+    font-size: 1.3rem;
+  }
+  .footer .datos .logoFooter {
+    width: 20rem;
+  }
+  .footer .datos .contacto p {
+    font-size: 18px;
+  }
+  .footer .formulario .input {
+    width: 16rem;
+  }
+  .footer .formulario .textArea {
+    width: 16rem;
+  }
+  .footer .formulario .position-button {
+    right: 4.375rem;
+  }
+  /*PAGINAS SECUNDARIAS*/
+  .servicios div h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    height: 10rem;
+  }
+  header .imageLogo img {
+    height: 4rem;
+  }
+  .bienvenida div h1 {
+    font-size: 1.2rem;
+  }
+  .bienvenida div span {
+    width: 3rem;
+    border: 1.5px solid;
+  }
+  .bienvenida h3 {
+    font-size: 14px;
+  }
+  #nuestrosServicios .tituloSubrayado2 h2 {
+    font-size: 1.3rem;
+  }
+  #nuestrosServicios .grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(1, 16rem);
+    column-gap: none;
+    row-gap: none;
+  }
+  #nuestrosServicios .grid-tarjetas .tarjetasContainer {
+    width: 16rem;
+  }
+  .confian .tituloSubrayado2 h2 {
+    font-size: 1.3rem;
+  }
+  .footer .datos .logoFooter {
+    width: 18rem;
+  }
+  .footer .datos .contacto p {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

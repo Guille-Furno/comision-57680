@@ -1,0 +1,161 @@
+@media (max-width: 670px){
+    header{
+
+        .imageLogo{
+            img{
+                height: 5rem;
+            }
+        }
+        .nav{
+            margin-right: 4rem;
+
+            ul{
+                gap:5px
+            }
+        }
+    }
+
+    .bienvenida{
+        div{
+            h1{
+            font-size: 2.2rem;
+            }
+            span{
+                width: 6rem;
+            }
+        }
+        h3{
+            font-size: 20px;
+        }
+    }
+
+    #nuestrosServicios{
+        .tituloSubrayado2{
+            h2{
+                font-size: 2.5rem;
+                span{
+                    border: 0.22rem solid;
+                }
+            }
+        }
+
+        .grid-tarjetas{
+            @include grid (2 , 15rem , 2rem , none);
+
+            .tarjetasContainer{
+                width: 15rem;
+                height: 22rem;
+
+                button{
+                    height: 2rem;
+                    width: 8rem;
+
+                    a{
+                        font-size: .8rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .confian{
+        .tituloSubrayado2{
+            h2{
+                font-size: 2.5rem; 
+                span{
+                    width: 5rem;
+                }
+            }
+        }
+
+        .empresas{
+            height: 14%;
+        }
+    }
+
+    .footer{
+        .datos{
+            margin-bottom: 8rem;
+
+            .logoFooter{
+                width: 15rem;
+            }
+            .contacto{
+                margin-left: 1rem;
+
+                img{
+                    height: .8rem;
+                    width: .8rem;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .formulario{
+            margin-left: -0.25rem;
+
+            .input{
+                width:15rem;
+            }
+            .textArea{
+                width:15rem;
+            }
+
+        }
+    }
+
+/*PAGINAS SECUNDARIAS*/
+
+.header2{
+    .nav{
+        margin-right: 0rem;
+    }
+}
+
+
+.servicios{
+    div{
+        h2{
+            font-size: 2.5rem;
+            span{
+                width: 3rem;
+            }
+        }
+    }
+    .info{
+        margin: 0;
+        height: 300px;
+        img{
+            width: 15rem;
+        }
+
+        ul{
+            width: 13rem;
+            
+
+            p{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+.footer2{
+    .contacto2{
+        width: 20rem;
+
+        img{
+            height: 0.7rem;
+            width: 0.7rem;
+        }
+
+        p{
+            font-size: 0.7rem;
+        }
+    }
+}
+
+}

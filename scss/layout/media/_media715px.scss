@@ -1,0 +1,56 @@
+@media (max-width: 715px){
+    header{
+        .nav{
+            a{
+                font-size: 12px;
+            }
+        }
+    }
+
+    #nuestrosServicios{
+        .grid-tarjetas{
+            column-gap: 2rem;
+        }
+    }
+
+    .footer{
+        .datos{
+            .logoFooter{
+                width: 18rem;
+                margin-top: 5rem;
+            }
+
+            .contacto{
+                width: 16rem;
+
+                img{
+                    height: 1rem;
+                    width: 1rem;
+                }
+
+                p{
+                    font-size: 15px;
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        .formulario{
+            margin-left: -1.25rem;
+
+            .input {
+                width: 17rem;
+                height: 2.5rem;
+            }
+        
+            .textArea {
+                width:17rem;
+            }
+        
+            .position-button {
+                right: .9rem;
+                bottom: 1rem;
+            }
+        }
+    }
+}

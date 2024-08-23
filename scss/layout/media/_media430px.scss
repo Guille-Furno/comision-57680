@@ -1,0 +1,44 @@
+@media (max-width: 430px){
+    #nuestrosServicios{
+        .tituloSubrayado2{
+            height: 8rem;
+            h2{
+                font-size: 1.7rem;
+                margin-left: -1.25rem;
+
+                span{
+                    border: 2px solid;
+                    width: 2rem;
+                }
+            }
+        }
+    }
+
+    .confian{
+        .tituloSubrayado2{
+            h2{
+                font-size: 1.7rem;
+            }
+        }
+
+        .empresas{
+            .logoEmpresas{
+                width: 50%;
+            }
+        }
+    }
+
+/*PAGINAS SECUNDARIAS*/
+    .servicios{
+        .tituloSubrayado2{
+            h2{
+                font-size: 1.8rem;
+                span{
+                    border: 0.2rem solid;
+                    width: 2.5rem;
+                }
+            }
+        }
+    }
+
+}

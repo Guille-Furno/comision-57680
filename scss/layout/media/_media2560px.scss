@@ -1,55 +1,181 @@
 /*******@MEDIA*******/
 
 /**PANTALLA 4K**/
-/*INDEX*/
 
-@media (min-width: 1441px) and (max-width: 2561px){
+// @media (min-width: 1450px) and (max-width: 2561px){
 
-    header{
-        height: 35rem;
+//     header{
+//         height: 35rem;
 
-        img{
-            height: 11.5rem;
-            margin-left: 4rem;
-            margin-top: 4rem;
-        }
-    }
+//             img{
+//                 height: 11.5rem;
+//                 margin-left: 4rem;
+//                 margin-top: 4rem;
+//             }
+//     }
 
-    .nav{
-        
-        a{
-            font-size: 1.5625rem;
-            &:hover{
-                font-weight: bold;
-                transition: 0.2s;
-            }
-        }
-    }
-}
-    .bienvenida{
-        height: 600px;
+//         .nav{
+            
+//             a{
+//                 font-size: 1.5625rem;
+//                 &:hover{
+//                     font-weight: bold;
+//                     transition: 0.2s;
+//                 }
+//             }
+//         }
+// }
+//     .bienvenida{
+//         height: 600px;
 
-        h1{
-            font-size: 4.5rem;
+//         h1{
+//             font-size: 4.5rem;
 
-            span{
-                border: 4px solid;
-                width: 16rem;
-            }
-        }
+//             span{
+//                 border: 4px solid;
+//                 width: 16rem;
+//             }
+//         }
 
-        h3{
-            font-size: 3.25rem;
-        }
-    }
+//         h3{
+//             font-size: 3.25rem;
+//         }
+//     }
     
-    .tituloSubrayado2{
-        padding: 50px;
+//     .tituloSubrayado2{
+//         padding: 50px;
 
-        h2{
-            font-size: 65px;
-        }
-    }
+//         h2{
+//             font-size: 65px;
+//         }
+// }
 
+//         .grid-tarjetas{
+//             @include grid (3 , 25rem , 8rem , 10rem);
 
+//             .tarjetasContainer{
+//                 width: 25rem;
+//                 height: 35rem;
+
+//                 h3{
+//                     font-size: 30px;
+//                 }
+
+//                 button{
+//                     height: 2.5rem;
+//                     width: 10rem;
+
+//                     a{
+//                         font-size: 1rem;
+//                     }
+//                 }
+
+//             }
+// }
+//     .confian{
+//         height: 45rem;
+
+//         .empresas{
+//             height: 20%;
+//             margin-top: 6.125rem;
+//         }
+// }
+
+//     .footer{
+//         height: 40rem;
+
+//         .datos{
+//             margin-left: 5rem;
+//             margin-bottom: 7rem;
+
+//             .logoFooter{
+//                 width: 33rem;
+//             }
+
+//             .contacto{
+//                 img{
+//                     height: 1.6rem;
+//                     width: 1.6rem;
+//                 }
+
+//                 p{
+//                     font-size: 1.6rem;
+//                 }
+//             }
+//         }
+
+//         .formulario{
+//             margin-left: 20rem;
+
+//             .input {
+//                 width: 35rem;
+//                 height: 4.125rem;
+//             }
+
+//             .textArea{
+//                 width: 35rem;
+//                 height: 19rem;
+//             }
+
+//             button{
+//                 width: 8em;
+//                 height: 3rem;
+//                 font-size: 18px;
+                
+//                 .position-button{
+//                     position: absolute;
+//                     right: 1.9375rem;
+//                     bottom: -8.625rem;
+//                 }
+//             }
+//         }
+// }
+
+//     /*PAGINAS SECUNDARIAS*/
+
+//     .header2{
+//         height: 20rem;
+
+//         nav{
+//             width: 40rem;
+//             margin-top: 7.25rem;
+//         }
+//     }
+
+//         .servicios{
+//             h2{
+//                 font-size: 70px;
+//             }
+//         }   
+//             .info{
+//                 img{
+//                     width: 40rem;
+//                 }
+                
+//                 ul{
+//                     weight: 550px;
+//                     width: 40rem;
+
+//                     p{
+//                         font-size: 2.5rem;
+//                     }
+//                 }
+//             }
+    
+//     .footer2{
+//         height: 18rem;
+
+//         .contacto2{
+//             width: 35rem;
+
+//             img{
+//                 height: 1.8rem;
+//                 width: 1.8rem;
+//             }
+
+//             p{
+//                 font-size: 1.8rem;
+//             }
+//         }
+//     }
 

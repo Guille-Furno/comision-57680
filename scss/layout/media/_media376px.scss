@@ -1,0 +1,67 @@
+@media (max-width: 376px){
+    header{
+        .imageLogo{
+            img{
+                height: 4rem;
+            }
+
+        }
+    }
+    .bienvenida{
+        div{
+            h1{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    #nuestrosServicios{
+        .tituloSubrayado2{
+            height: 8rem;
+            h2{
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .confian{
+        .tituloSubrayado2{
+            h2{
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .footer{
+
+    .datos{
+        .logoFooter{
+            width: 20rem;
+        }
+        .contacto{
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+        .formulario{
+            .input{
+                width: 16rem;
+            }
+            .textArea{
+                width: 16rem;
+            }
+
+            .position-button{
+                right: 4.375rem;
+            }
+        }
+    }
+
+/*PAGINAS SECUNDARIAS*/
+    .servicios{
+        div{
+            h2{
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

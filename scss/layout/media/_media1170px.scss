@@ -1,0 +1,54 @@
+@media  (max-width: 1170px){
+    header{
+        .nav{
+            margin-right: 3rem;
+
+            a{
+                font-size: 1rem;  
+            }
+        }
+    }
+
+        #nuestrosServicios{
+            
+            .grid-tarjetas{
+                @include grid (3 , 18rem , 2rem , none);
+
+                .tarjetasContainer{
+                    width: 18rem;
+                    height: 25rem;
+                }
+            }
+        }
+    
+    footer{
+        .contacto {
+            width: 18rem;
+            margin-left: 1.5rem;
+
+            p{
+                margin-left: 1.4375rem;
+            }
+        }
+    }
+
+/*PAGINAS SECUNDARIAS*/
+
+    .header2{
+        .nav{
+            margin-right: 2rem;
+        }
+    }
+
+    .servicios{
+        .info{
+            img{
+                width: 23rem;
+            }
+            ul{
+                width: 23rem;
+            }
+        }
+    }
+}
+
