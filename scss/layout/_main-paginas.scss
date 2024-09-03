@@ -37,9 +37,9 @@
             }
 
             ul{
-                height: 411px;
+                height: 20rem;
                 width: 30rem;
-                @include flex(column,none,center,none,none);
+                @include flex(column,none,space-around,none,none);
                 margin: 0;
                 padding: 0;
 
@@ -51,6 +51,10 @@
             .redes-img{
                 height: 28.125rem;
             }
+        }
+
+        .img-servicios{
+            height: 20rem
         }
 
         .info2{

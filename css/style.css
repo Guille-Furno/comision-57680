@@ -316,6 +316,13 @@ header nav a:hover {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 15px;
 }
+.formulario div input::placeholder {
+  position: absolute;
+  left: 0.9375rem;
+}
+.formulario div input:focus {
+  outline: none;
+}
 .formulario div .textArea {
   width: 25rem;
   height: 12.5rem;
@@ -324,6 +331,14 @@ header nav a:hover {
   border-radius: 0.75rem;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 15px;
+}
+.formulario div .textArea::placeholder {
+  position: absolute;
+  left: 0.9375rem;
+  top: 1rem;
+}
+.formulario div .textArea:focus {
+  outline: none;
 }
 .formulario div .label {
   display: flex;
@@ -423,12 +438,12 @@ header nav a:hover {
   width: 30rem;
 }
 .servicios .info ul, .servicios .info2 ul {
-  height: 411px;
+  height: 20rem;
   width: 30rem;
   display: flex;
   flex-direction: column;
   flex-wrap: none;
-  justify-content: center;
+  justify-content: space-around;
   align-items: none;
   gap: none;
   margin: 0;
@@ -439,6 +454,9 @@ header nav a:hover {
 }
 .servicios .info .redes-img, .servicios .info2 .redes-img {
   height: 28.125rem;
+}
+.servicios .img-servicios {
+  height: 20rem;
 }
 .footer2 {
   height: 8.25rem;
@@ -505,6 +523,11 @@ header nav a:hover {
   width: 80%;
   height: 70%;
   margin: 0 10%;
+  object-fit: cover;
+}
+.tarjetasContainer .img-tarjeta {
+  object-fit: contain;
+  box-shadow: 2px 2px 10px rgb(198, 197, 197);
 }
 .tarjetasContainer button {
   margin-left: 10%;

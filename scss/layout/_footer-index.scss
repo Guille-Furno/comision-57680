@@ -58,7 +58,19 @@
             border-radius: .625rem;
             font-family: 'Source Sans Pro', sans-serif;
             font-size: 15px;
+            
+            
+            &::placeholder{
+                position: absolute;
+                left: .9375rem;
+                
+            }
+
+            &:focus{
+                outline: none;
+            }
         }
+
 
         .textArea {
             width: 25rem;
@@ -68,6 +80,16 @@
             border-radius: .75rem;
             font-family: 'Source Sans Pro', sans-serif;
             font-size: 15px;
+
+            &::placeholder{
+                position: absolute;
+                left: .9375rem;
+                top: 1rem;
+            }
+
+            &:focus{
+                outline: none;
+            }
         }
 
         .label {
