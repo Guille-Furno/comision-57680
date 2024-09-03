@@ -833,7 +833,7 @@ header nav a:hover {
     width: 6rem;
   }
   .bienvenida h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
   #nuestrosServicios .tituloSubrayado2 h2 {
     font-size: 2.5rem;
@@ -1161,6 +1161,9 @@ header nav a:hover {
   .confian .empresas .logoEmpresas {
     width: 40%;
   }
+  .footer .formulario .position-button {
+    right: 5.375rem;
+  }
   /*PAGINAS SECUNDARIAS*/
   .header2 {
     height: 10rem;
@@ -1183,6 +1186,9 @@ header nav a:hover {
   }
   .confian .empresas .logoEmpresas {
     width: 50%;
+  }
+  .footer .formulario .position-button {
+    right: 4.375rem;
   }
   /*PAGINAS SECUNDARIAS*/
   .servicios .tituloSubrayado2 h2 {
